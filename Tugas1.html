@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokoh Baju</title>
+    <link rel="stylesheet" href="tugas1.css">
+</head>
+<body>
+
+    <nav>
+        <div class="wrapper">
+            <div class="logo"><a href="">MalaShope</a></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#produk">Produk</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#" id="signinButton">Sign in</a></li>
+                </ul>
+            </div>
+        </div>      
+    </nav>
+    <div class="wrapper">
+        <section id="home">
+            <img src="https://img.freepik.com/free-vector/seasonal-sale-discounts-presents-purchase-visiting-boutiques-luxury-shopping-price-reduction-promotional-coupons-special-holiday-offers-vector-isolated-concept-metaphor-illustration_335657-2766.jpg?t=st=1711458634~exp=1711462234~hmac=1ac34014c10fe41412a7d1c899fee9aad2542d4400c831f44a9976845193eead&w=740" />
+            <div class="kolom">
+                <p class="deskripsi">Belanja Pakaian #dirumahaja</p>
+                <h2>Murah, Tetapi Tidak Murahan</h2>
+                <p>Ingin pakaian murah dan berkualitas, Malashope solusinya. Kami menyediakan aneka macam pakaiaan yang berkulitas tinggi tetapi memiliki harga yang ekonomis</p>
+                <p><a href="" class="tbl-ungu2">Pelajari Lebih Lanjut</a></p>
+            </div>
+        </section>
+
+        <section id="produk">
+            <div class="kolom">
+                <h2>Produk</h2>
+                <table>
+                    <tr>
+                        <th>Nama Baju</th>
+                        <th>Harga</th>
+                    </tr>
+                    <tr>
+                        <td>Kemeja Polos</td>
+                        <td>Rp 150.000</td>
+                    </tr>
+                    <tr>
+                        <td>Kaos Stripe</td>
+                        <td>Rp 100.000</td>
+                    </tr>
+                    <tr>
+                        <td>Celana Jeans</td>
+                        <td>Rp 200.000</td>
+                    </tr>
+                    <tr>
+                        <td>Dress Floral</td>
+                        <td>Rp 250.000</td>
+                    </tr>
+                    <tr>
+                        <td>Jaket Denim</td>
+                        <td>Rp 300.000</td>
+                    </tr>
+                </table>
+
+                <audio controls>
+                    <source src="audio.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </section>
+    </div>
+
+    <div id="contact">
+        <div class="wrapper">
+            <div class="footer">
+                <div class="footer-section">
+                    <h3>TokohMala</h3>
+                    <p>Tokoh Pakaiaan No.1 di Indonesia</p>
+                </div>
+                <div class="footer-section">
+                    <h3>About</h3>
+                    <p>Didirikan pada tahun 2020</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>BTN.Tmurama Blok A1/5</p>
+                    <p>Kode Pos: 90115</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Sosial</h3>
+                    <iframe width="200" height="100" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="signInPopup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+
+            <h2>Sign in</h2>
+            <form action="">
+                <label for="username">Username:</label><br>
+                <input type="text" id="username" name="username"><br>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password"><br><br>
+                <input type="submit" value="Sign in">
+            </form>
+        </div>
+    </div>
+
+    
+
+    <script>
+        function openPopup() {
+            document.getElementById("signInPopup").style.display = "block";
+        }
+
+        function closePopup() {
+            document.getElementById("signInPopup").style.display = "none";
+        }
+
+        document.getElementById("signinButton").addEventListener("click", openPopup);
+    </script>
+
+
+    <div id="copyright">
+        <div class="wrapper">
+            &copy; 2024. <b>Malashope</b> All Rigbt Reserved
+        </div>
+    </div>
+</body>
+</html>
